@@ -45,16 +45,30 @@ you can create an instance by
 1) opswork method --- was fine cant go further as somehow not allowing mysql to be accessed by my local machine --stucked at that
 may be security groups of opswork not allowing it to hence 
 
-solution to that you can change security group for that instance from ec2 dashboard
-or 
-you can add your custom security group to mysql layer 
-1) it wont be effective for running mysql instance
--- 1.1) rebooting the instance -- cant restart after adding security 		     group --- setup failed 
---1.2) even after removing added security group -- on rebooting , 
-	   setup failed 
- --1.3 ) have to make another mysqlinstance
+solution to that problem : -
 
-check custom ami image part also 
+boldyou can add your custom security group to mysql layer /bold
+1) it wont be effective for running mysql instance
+-- 1.1) rebooting the instance -- cant restart after adding security 		     group --- setup failed
+--1.2) even after removing added security group -- on rebooting , 
+	   setup failed
+ --1.3 ) have to make another mysqlinstance ( added additional 		     default group to the layer ) --- ok - and -- accessible
+boldyou can change security groups of mysqlinstance which is also an ec2 instance from ec2dashboard
+/bold
+
+	underlineboldusing mysqlinstance instead of rds/bold/underline
+
+the app defines the database name for rds or for mysqlinstance 
+mysqlinstance -- it is a ec2 instance with mysql installed only
+
+so 
+1) in mysqlinstance there will be a database named under the name 		you defined  in the app layer 
+2)  integrating db to any of the php running  instances by allowing   		db 	access as per mysqlinstance ( default root password defined	
+	there )
+3 ) can check your website
+
+ 
+check custom ami image part also
 
 what is cheff and recipes
 
