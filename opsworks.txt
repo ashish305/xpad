@@ -1,42 +1,42 @@
 
-mnyof2rr5b
-
-check instance is running which services 
+strikethroughmnyof2rr5b
+/strikethrough
+strikethroughcheck instance is running which services 
 add it to git 
 
 using git for stoting repo and deploying it to  doc root of instance
 document root is /srv/www/app_name/  for php app
+/strikethrough
+strikethroughcheck if whatever goes to git goes to running instance or not /strikethrough
 
-check if whatever goes to git goes to running instance or not 
+strikethroughdeploy an app/strikethrough
 
-deploy an app
-
-check dbinstance to Ec2_instance connection
+strikethroughcheck dbinstance to Ec2_instance connection
 &
 rds security group defined manually and adding ip of your local system for testing  purpose and then adding internal i.p. of an instance if its in same zone and adding publice i.p. of an instance if its in other zone
 
 security groups : 
-
-rds access from local system -- security group issue
-solution - define a new security gro
+/strikethrough
+strikethroughrds access from local system -- security group issue/strikethrough
+strikethroughsolution - define a new security gro/strikethrough
 
 check zones and regions aws
 via making
 
-same region , same zone --- ec2 n rds
+strikethroughboldsame region , same zone --- ec2 n rds/bold
 region orgeon
 ec2 zone us-west-2a
 rds zone us-west-2a
 access dealt with private/local ip address
 
-same region  , diff zone instances -- ec2 and rds
+boldsame region  , diff zone instances -- ec2 and rds/bold
 region orgeon
 ec2 zone us-west-2b
 rds zone us-west-2a
 rds access dealt with private/local ip address
-
-diff region instances -- ec2 and rds
-not possible , both have to be in same instances 
+/strikethrough
+boldstrikethroughdiff region instances -- ec2 and rds/bold
+not possible , both have to be in same instances /strikethrough
 
 
 check what is my sql instance in opswork
@@ -52,7 +52,7 @@ you can add your custom security group to mysql layer
 -- 1.1) rebooting the instance -- cant restart after adding security 		     group --- setup failed 
 --1.2) even after removing added security group -- on rebooting , 
 	   setup failed 
- --1.3 ) 
+ --1.3 ) have to make another mysqlinstance
 
 check custom ami image part also 
 
@@ -61,7 +61,6 @@ what is cheff and recipes
 mysql layer 
 root 
 password : 4nohqxcpwk
-
 
 
 
