@@ -1,0 +1,67 @@
+
+mnyof2rr5b
+
+check instance is running which services 
+add it to git 
+
+using git for stoting repo and deploying it to  doc root of instance
+document root is /srv/www/app_name/  for php app
+
+check if whatever goes to git goes to running instance or not 
+
+deploy an app
+
+check dbinstance to Ec2_instance connection
+&
+rds security group defined manually and adding ip of your local system for testing  purpose and then adding internal i.p. of an instance if its in same zone and adding publice i.p. of an instance if its in other zone
+
+security groups : 
+
+rds access from local system -- security group issue
+solution - define a new security gro
+
+check zones and regions aws
+via making
+
+same region , same zone --- ec2 n rds
+region orgeon
+ec2 zone us-west-2a
+rds zone us-west-2a
+access dealt with private/local ip address
+
+same region  , diff zone instances -- ec2 and rds
+region orgeon
+ec2 zone us-west-2b
+rds zone us-west-2a
+rds access dealt with private/local ip address
+
+diff region instances -- ec2 and rds
+not possible , both have to be in same instances 
+
+
+check what is my sql instance in opswork
+for mysql layer you will be requiring mysql instance and for that 
+you can create an instance by 
+1) opswork method --- was fine cant go further as somehow not allowing mysql to be accessed by my local machine --stucked at that
+may be security groups of opswork not allowing it to hence 
+
+solution to that you can change security group for that instance from ec2 dashboard
+or 
+you can add your custom security group to mysql layer 
+1) it wont be effective for running mysql instance
+-- 1.1) rebooting the instance -- cant restart after adding security 		     group --- setup failed 
+--1.2) even after removing added security group -- on rebooting , 
+	   setup failed 
+ --1.3 ) 
+
+check custom ami image part also 
+
+what is cheff and recipes
+
+mysql layer 
+root 
+password : 4nohqxcpwk
+
+
+
+
